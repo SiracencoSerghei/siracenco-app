@@ -39,12 +39,31 @@
   <SignupModal />
 {/if}
 
-<style>
+<!-- <style>
   nav {
     display: flex;
     gap: 1rem;
     padding: 1rem;
     background-color: #f0f0f0;
     align-items: center;
+  }
+</style> -->
+<style>
+  nav {
+    position: fixed;     /* фіксує навбар */
+    top: 0;              /* прив’язує до верхнього краю */
+    left: 0;
+    width: 100%;         /* щоб тягнувся на всю ширину */
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    align-items: center;
+    z-index: 1000;       /* щоб завжди був над контентом */
+  }
+
+  main {
+    margin-top: 70px;    /* відступ, щоб контент не заховався під навбар */
+    padding: 1rem;
   }
 </style>
