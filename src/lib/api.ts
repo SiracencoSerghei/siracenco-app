@@ -1,5 +1,4 @@
-
-const API_URL = "http://localhost:8000";
+const API_URL = 'http://localhost:8000';
 // API_URL = "http://web:8000";
 
 export async function signup(email: string, password: string) {
